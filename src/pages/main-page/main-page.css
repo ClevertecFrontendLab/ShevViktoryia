@@ -1,6 +1,8 @@
 :root {
-    --black-color: #000000;
+    --black-color: #262626;
     --light-blue: #F0F5FF;
+    --white: #FFFFFF;
+    --dark-blue: #061178;
 }
 
 * {
@@ -11,6 +13,13 @@
 #root {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+    color: var(--black-color);
+}
+
+main {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -32,7 +41,7 @@
 
 .header_about {
     display: flex;
-    grid-gap: 10px;
+    justify-content: space-between;
     padding: 8px 0;
     margin-top: 14px;
 }
@@ -49,4 +58,56 @@
 
 .settings_icon {
     margin-right: 10px;
+}
+
+.about_cleverFit {
+    width: 752px;
+    margin-bottom: 24px;
+}
+
+.our_advantages {
+    margin: 24px 0;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+.card {
+    padding: 24px;
+    background-color: var(--white);
+}
+
+.advantages_list {
+    list-style-type: "— ";
+    list-style-position: inside;
+}
+
+.cleverFit h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cards_wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.serviceCard {
+    background-color: var(--white);
+    color: var(--black-color);
+    padding: 12px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.serviceCard p {
+    color: var(--dark-blue);
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 156px;
+    padding-bottom: 41px;
 }
