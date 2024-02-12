@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card } from 'antd';
 import { SettingOutlined, AndroidFilled, AppleFilled, CalendarTwoTone, HeartFilled } from '@ant-design/icons';
 import background from "../../assets/img/Main_page_light.png";
-import profile from '../img/profile.png';
-
 
 import './main-page.css';
-import { url } from 'inspector';
 
 export const MainPage: React.FC = () => {
 
@@ -37,7 +34,7 @@ export const MainPage: React.FC = () => {
                         </ul>
                     </div>
                     <div className="cleverFit card">
-                        <h4>CleverFit — это не просто приложение, а твой личный помощник в мире фитнеса. Не откладывай на завтра — начни тренироваться уже сегодня!</h4>
+                        <h4>CleverFit — это не приложение, а твой личный помощник в мире фитнеса. Не откладывай на завтра — начни тренироваться уже сегодня!</h4>
                     </div>
                     <div className="cards_wrapper">
                         <Card className='serviceCard' title="Расписать тренировки" style={{ width: 240 }}>

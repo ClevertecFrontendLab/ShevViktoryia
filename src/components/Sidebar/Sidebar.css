@@ -1,0 +1,13 @@
+.menu {
+    width: 208px;
+    background-color: var(--white);
+    float: left;
+    display: flex;flex-flow: column nowrap;
+    height: 100%;
+}
+
+.logo_wrapper {
+    padding: 0 46px 0 29px;
+    margin-top: 44px;
+    margin-bottom: 67px;
+}
