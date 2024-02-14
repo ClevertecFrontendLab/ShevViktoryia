@@ -1,21 +1,23 @@
-.menu {
-    width: 208px;
+.menu .mobile {
+    width: 106px;
     background-color: var(--white);
     transition: all 0.5s;
 }
 
-.navigation {
+.navigation .mobile {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.logo_wrapper img {
-    margin-bottom: 67px;
-    padding-top: 14px;
+.logo_wrapper .mobile img {
+    margin-bottom: 32px;
+    padding-top: 16px;
+    width: 56px;
+    height: 18px;
 }
 
-.item_list {
+.item_list .mobile {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -25,54 +27,64 @@
     transition: all 0.5 ease;
 }
 
-.item_list li {
+.item_list .mobile li {
     padding: 12px 16px;
     margin-bottom: 16px;
     cursor: pointer;
 }
 
-.logout {
+.item_list .mobile li svg {
+    display: none;
+}
+
+.logout .mobile {
     list-style: none;
     justify-content: baseline;
-    display: flex;
-    align-items: center;
     padding: 12px 16px;
     border-top: 1px solid #F0F0F0;
 }
 
-.logout .close {
+.logout .close .mobile {
     padding: 13px 24px;
     justify-content: center;
 }
 
-.close li {
+.logout .mobile span {
+    display: none;
+}
+
+.logout .mobile p {
+    margin: 0 auto;
+}
+
+.close .mobile li {
     padding: 13px 24px;
 }
 
-.close .ant-menu-title-content, .close p {
+.close .ant-menu-title-content, .close  .mobile p {
     display: none;
     transition: all 0.3 ease;
 }
 
-.sidebar_button {
+.sidebar_button .mobile{
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 479px;
+    top: 24px;
     border-bottom: 20px solid var(--white);
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     rotate: 90deg;
-    height: 20px;
-    width: 66px;
+    height: 48px;
+    width: 32px;
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.icon_btn {
+.icon_btn  .mobile{
     position: relative;
     display: flex;
     align-items: center;
-    top: 19px;
+    top: 33px;
     rotate: -90deg;
 }

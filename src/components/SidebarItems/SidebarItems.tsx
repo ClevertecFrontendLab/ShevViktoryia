@@ -1,5 +1,5 @@
 import type { MenuProps } from 'antd';
-import { CalendarTwoTone, HeartFilled, IdcardOutlined, TrophyFilled } from '@ant-design/icons';
+import { CalendarTwoTone, HeartFilled, IdcardOutlined, LogoutOutlined, TrophyFilled } from '@ant-design/icons';
 
 const SidebarList: MenuProps['items'] = [
     {
