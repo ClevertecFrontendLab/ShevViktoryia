@@ -1,13 +1,24 @@
 .menu {
     width: 208px;
     background-color: var(--white);
-    float: left;
-    display: flex;flex-flow: column nowrap;
-    height: 100%;
 }
 
 .logo_wrapper {
-    padding: 0 46px 0 29px;
-    margin-top: 44px;
+    padding: 30px 46px 0 29px;
+}
+
+.logo_wrapper img {
     margin-bottom: 67px;
+    padding-top: 14px;
+}
+
+.item_list {
+    list-style: none;
+    font-size: 14px;
+}
+
+.item_list li {
+    padding: 12px 0;
+    margin-bottom: 16px;
+    cursor: pointer;
 }

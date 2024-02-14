@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-import { SettingOutlined, AndroidFilled, AppleFilled, CalendarTwoTone, HeartFilled } from '@ant-design/icons';
+import { SettingOutlined, AndroidFilled, AppleFilled, CalendarTwoTone, HeartFilled, IdcardOutlined } from '@ant-design/icons';
 import background from "../../assets/img/Main_page_light.png";
 
 import './main-page.css';
@@ -37,14 +37,14 @@ export const MainPage: React.FC = () => {
                         <h4>CleverFit — это не приложение, а твой личный помощник в мире фитнеса. Не откладывай на завтра — начни тренироваться уже сегодня!</h4>
                     </div>
                     <div className="cards_wrapper">
-                        <Card className='serviceCard' title="Расписать тренировки" style={{ width: 240 }}>
-                            <p><HeartFilled /> Тренировки</p>
+                        <Card className='serviceCard' title="Расписать тренировки" bordered={false} style={{ width: 240 }}>
+                            <p><HeartFilled twoToneColor='#2F54EB' style={{ fontSize: '14px', marginRight: '8px'}} /> Тренировки</p>
                         </Card>
-                        <Card className='serviceCard' title="Назначить календарь" style={{ width: 240 }}>
-                            <p><CalendarTwoTone /> Календаль</p>
+                        <Card className='serviceCard' title="Назначить календарь" bordered={false} style={{ width: 240 }}>
+                            <p><CalendarTwoTone twoToneColor='#2F54EB' style={{ fontSize: '14px', marginRight: '8px'}} /> Календаль</p>
                         </Card>
-                        <Card className='serviceCard' title="Заполнить профиль" style={{ width: 240 }}>
-                            <p><CalendarTwoTone /> Профиль</p>
+                        <Card className='serviceCard' title="Заполнить профиль" bordered={false} style={{ width: 240 }}>
+                            <p><IdcardOutlined twoToneColor='#2F54EB' style={{ fontSize: '14px', marginRight: '8px' }} /> Профиль</p>
                         </Card>
                     </div>
                 </div>
@@ -53,10 +53,12 @@ export const MainPage: React.FC = () => {
                 <div className="wrapper">
                     <div className="footer_wrapper">
                         <a href="#" className="reviews">Смотреть отзывы</a>
-                        <Card className='serviceCard' title="Скачать на телефон" style={{ width: 240 }}>
-                            <p>Доступно в PRO-тарифе</p>
-                            <p><AndroidFilled />Android OS</p>
-                            <p><AppleFilled />Apple IOS</p>
+                        <Card className='downloadCard' title="Скачать на телефон" style={{ width: 240 }}>
+                            <p className='download_description'>Доступно в PRO-тарифе</p>
+                            <div className="download_buttons">
+                                <p className='download_app'><AndroidFilled style={{ fontSize: '14px', marginRight: '8px' }} />Android OS</p>
+                                <p className='download_app'><AppleFilled style={{ fontSize: '14px', marginRight: '8px' }} />Apple IOS</p>
+                            </div>
                         </Card>
                     </div>
                 </div>

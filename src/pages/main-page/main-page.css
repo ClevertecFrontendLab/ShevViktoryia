@@ -3,6 +3,9 @@
     --light-blue: #F0F5FF;
     --white: #FFFFFF;
     --dark-blue: #061178;
+    --middle-blue: #2F54EB;
+    --light-grey: #F0F0F0;
+    --grey: #8C8C8C;
 }
 
 * {
@@ -11,6 +14,7 @@
 }
 
 #root {
+    display: flex;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     color: var(--black-color);
@@ -20,7 +24,7 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    float: right;
+    width: 100%;
 }
 
 .wrapper {
@@ -95,14 +99,19 @@ main {
 
 .serviceCard {
     background-color: var(--white);
-    color: var(--black-color);
-    padding: 12px 0;
     font-size: 16px;
     text-align: center;
 }
 
+.ant-card-head-title {
+    padding: 12px 0;
+    color: var(--black-color);
+}
+
 .serviceCard p {
-    color: var(--dark-blue);
+    color: var(--middle-blue);
+    border-top: 1px solid var(--light-grey);
+    padding: 19px 0;
 }
 
 .footer_wrapper {
@@ -111,4 +120,36 @@ main {
     align-items: end;
     padding-top: 156px;
     padding-bottom: 41px;
+}
+
+.downloadCard {
+    background-color: var(--white);
+    font-size: 16px;
+    box-sizing: border-box;
+    color: var(--middle-blue);
+}
+
+.downloadCard .ant-card-head-title {
+    padding: 12px 24px 8px;
+    color: var(--middle-blue);
+}
+
+.download_description {
+    font-size: 14px;
+    padding: 0 24px 12px;
+    color: var(--grey);
+}
+
+.download_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--light-grey);
+    padding: 12px 0;
+}
+
+.download_app {
+    color: var(--black-color);
+    padding: 7px 11px;
+    font-size: 14px;
 }

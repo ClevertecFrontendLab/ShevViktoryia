@@ -1,6 +1,6 @@
 import { CalendarTwoTone, HeartFilled, IdcardOutlined, TrophyFilled } from '@ant-design/icons';
 
-const SidebarItems: object[] = [
+const SidebarItems = [
     {
       id: 1,
       svg: <CalendarTwoTone />,
